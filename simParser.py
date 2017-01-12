@@ -60,8 +60,5 @@ def main():
         if filename.startswith(options.prefix) and filename.endswith('.json'):
             parses += parse(filename, options.csv, options.hideHeaders, options.hideProfiles, options.hideActors)
             
-    with open(options.output, "w") as ofile:
-        print(parses, file=ofile)
-
 if __name__ == "__main__":
     main()
